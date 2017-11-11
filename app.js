@@ -32,8 +32,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//use nginx in production
-if (app.get('env') === 'development') {
+// //use nginx in production
+// if (app.get('env') === 'development') {
   log.debug("set Access-Control Header");
   app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -42,7 +42,7 @@ if (app.get('env') === 'development') {
     log.debug("use set Access-Control Header");
     next();
   });
-}
+// }
 
 log.debug("config common.storageType value: " + _.get(config, 'common.storageType'));
 

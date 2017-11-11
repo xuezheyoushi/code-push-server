@@ -15,7 +15,7 @@ RUN npm i -g cnpm --registry=https://registry.npm.taobao.org
 RUN cnpm install --silent --production
 
 # bundle app source
-#COPY . .
+COPY . .
 
 # build production
 #RUN npm run build --production

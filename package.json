@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lisong/code-push-server.git"
+    "url": "git://github.com/xuezheyoushi/code-push-server.git"
   },
   "keywords": [
     "code-push",
@@ -16,9 +16,9 @@
     "push"
   ],
   "author": {
-    "name": "Tab Lee",
-    "email": "lisong2010@gmail.com",
-    "url": "https://github.com/lisong/"
+    "name": "live106",
+    "email": "app@xuezheyoushi.com",
+    "url": "https://github.com/xuezheyoushi"
   },
   "bin": {
     "code-push-server": "./bin/www",

@@ -11,8 +11,9 @@ WORKDIR /usr/src/app
 
 # install dependencies
 COPY package.json ./package.json
-RUN npm i -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install --silent
+#RUN npm i -g cnpm --registry=https://registry.npm.taobao.org
+#RUN cnpm install --silent
+RUN npm i --silent
 
 # bundle app source
 COPY . .

@@ -12,12 +12,12 @@ WORKDIR /usr/src/app
 # install dependencies
 COPY package.json ./package.json
 RUN npm i -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install --silent
+RUN cnpm install --silent --production
 
 # bundle app source
-COPY . .
+#COPY . .
 
 # build production
-RUN npm run build --production
+#RUN npm run build --production
 
 CMD ["npm", "run", "start:prod"]

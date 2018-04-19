@@ -2,12 +2,12 @@ var config = {};
 config.development = {
   // Config for database, only support mysql.
   db: {
-    username: process.env.RDS_USERNAME || "root",
-    password: process.env.RDS_PASSWORD || null,
+    username: process.env.RDS_USERNAME || "codepush",
+    password: process.env.RDS_PASSWORD || "codepush",
     database: process.env.DATA_BASE || "codepush",
     host: process.env.RDS_HOST || "127.0.0.1",
-    port: process.env.RDS_PORT || 3306,
-    dialect: "mysql",
+    port: process.env.RDS_PORT || 5432,
+    dialect: "postgresql",
     logging: false
   },
   // Config for qiniu (http://www.qiniu.com/) cloud storage when storageType value is "qiniu".
